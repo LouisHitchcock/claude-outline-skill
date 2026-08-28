@@ -13,7 +13,7 @@ deletion is left to the Outline UI.
 From PowerShell in this cloned/extracted folder:
 
 ```powershell
-.\install.ps1
+.\install.ps1 -OutlineUrl "https://docs.your-outline-instance.com"
 ```
 
 Then set your API key as a Windows user environment variable:

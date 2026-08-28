@@ -1,5 +1,6 @@
 param(
-    [string]$OutlineUrl = "https://docs.louishitchcock.xyz"
+    [Parameter(Mandatory = $true)]
+    [string]$OutlineUrl
 )
 
 $ErrorActionPreference = "Stop"
@@ -23,4 +24,4 @@ Write-Host ""
 Write-Host "Now set your API key WITHOUT pasting it into this script:"
 Write-Host '  [Environment]::SetEnvironmentVariable("OUTLINE_API_KEY", "ol_api_YOUR_NEW_KEY", "User")'
 Write-Host ""
-Write-Host "Then fully quit and reopen Zed so it inherits the environment variables."
+Write-Host "Then fully quit and reopen your editor/terminal so it inherits the environment variables."
